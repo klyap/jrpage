@@ -1,0 +1,90 @@
+
+    .box{
+        position: relative;
+        width: 170px;
+        height: 250px;
+    	padding-left: 10px;
+    	display: inline-block;
+    }
+
+    .human{
+        width: 170px;
+        height: 170px;
+        background-size: 10%;
+        background-origin: 100px;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+    }
+    
+    .info{
+        width: 170px;
+        height: 50px;
+    }
+
+    h1{
+        font-family: 'Trebuchet MS', Verdana, Helvetica;
+        font-size: 20;
+        color: #00b3b3;
+        
+    }
+
+    h2{
+        font-family: 'Trebuchet MS', Verdana, Helvetica;
+        font-size: 15;
+        line-height: 10%;
+        text-align: center;
+    }
+
+    h3{
+        font-family: 'Trebuchet MS', Verdana, Helvetica;
+        font-size: 13;
+        line-height: 10%;
+        text-align: center;
+    }
+
+    p{
+        font-family: 'Trebuchet MS', Verdana, Helvetica;
+        font-size: 13;
+        line-height: 70%;
+ 		font-family: Helvetica;
+		text-align: center;
+	}
+#bigbox
+{
+    padding: 5%;
+	max-height: 90%;
+	
+}
+
+#feature
+{
+	width: 50%;
+	width: auto;
+	height: 400px;
+	background-color: #ff0000;
+}
+
+#main-feature
+{
+	height: auto;
+	max-height: 400px;
+	align: center;
+}
+
+#menu
+{
+	height: 300px;
+    width: 50px;
+    background-color: #ffffff;
+	position: fixed;
+	top: 30px;
+    right: 20px;
+    box-shadow: 10px;
+}
+
+.stretch {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0
+}
