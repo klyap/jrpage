@@ -22,16 +22,17 @@
     }
 
     h1{
-        font-family: 'Trebuchet MS', Verdana, Helvetica;
-        font-size: 20;
-        color: #00b3b3;
-        
+        font-family: 'Lucida Console', Verdana, Helvetica;
+        font-size: 120pt;
+        color: #131313;
+        margin-bottom: 50px;
+        text-align: center;
     }
 
     h2{
         font-family: 'Trebuchet MS', Verdana, Helvetica;
         font-size: 15;
-        line-height: 10%;
+
         text-align: center;
     }
 
@@ -49,11 +50,17 @@
  		font-family: Helvetica;
 		text-align: center;
 	}
-#bigbox
+
+    .details{
+        font-style: italic;
+        color: gray;
+    }
+.bigbox
 {
     padding: 5%;
-	max-height: 90%;
-	
+    height: auto;
+	min-height: 100%;
+    border-bottom: gray solid 1px;
 }
 
 #feature
@@ -73,9 +80,8 @@
 
 #menu
 {
-	height: 300px;
+	height: 100px;
     width: 50px;
-    background-color: #ffffff;
 	position: fixed;
 	top: 30px;
     right: 20px;
