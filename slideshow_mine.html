@@ -1,0 +1,36 @@
+<html>
+<link rel="stylesheet" type="text/css" href="style.css">
+<body>
+	<div class="bigbox" >
+		<img src = "http://1.bp.blogspot.com/-tt_zbf_cF1s/UXGv37VYV_I/AAAAAAAAAWk/qnQD-dpvhbs/s1600/Chow-chow+(6).jpg" style="z-index: -1000; height: 100%; width: 100%; position: absolute" id = "slide"/>
+		<img align = 'left' style="height: 100%; width: 25%;" onclick="back()"/>
+		<img align = 'right' style=" height: 100%; width: 25%; " onclick="forward()"/>
+		
+	</div>
+</body>
+</html>
+
+<script>
+    var pics = [
+    "http://www.websitesecrets101.com/assets/uploads/number-one.png",
+    "http://www.ourdesigns.com/sites/odi/images/big/REX00NB22_big.jpg",
+    "https://blognumbers.files.wordpress.com/2010/09/3.jpg"]
+    var i = 0;
+    function forward() {
+		i = i + 1;
+		if (i >= pics.length){
+			i = 0;
+		}
+		document.getElementById("slide").src = pics[i];
+		
+
+    }
+    function back() {
+    	i = i - 1;
+		if (i < 0){
+			i = pics.length - 1;
+		}
+		document.getElementById("slide").src = pics[i];
+		
+    }
+</script>
