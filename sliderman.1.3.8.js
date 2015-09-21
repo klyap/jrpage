@@ -298,7 +298,7 @@ var Sliderman = new function(){
 				image.src = parameters.src;
 			}
 			var style = image.style;
-			style.position = 'absolute';
+			style.position = 'relative';
 			container.appendChild(image);
 			AnimateItemsArr[cr] = style;
 			if(!needAnimate[cr]) hide(AnimateItemsArr[cr]);
@@ -514,7 +514,7 @@ var Sliderman = new function(){
 			descriptionShow(); linkUpd(); navigationUpd();
 		}//update
 
-		var styleDef = {width: display.width, height: display.height, position: 'absolute', top: 0, left: 0, display: 'block'};
+		var styleDef = {width: display.width, height: display.height, position: 'relative', top: 0, left: 0, display: 'block'};
 
 		var mainCont = document.getElementById(parameters.container);
 		function addElementEventOnmouseover(){isHover = true;

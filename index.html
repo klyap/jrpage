@@ -79,9 +79,9 @@
 <div class="bigbox" style="background:url(); padding: 0; background-size: 800px auto; background-repeat: no-repeat; background-position: center; height: 600px; background-color: white; border: none">
       <div id="wrapper">
 
-        <div id="examples_outer" position = 'relative'>
+        <div id="examples_outer" style = "margin: 0 auto; width: 99%">
 
-            <div id="slider_container_3" align = 'center' position = 'absolute' style = 'overflow: hidden'>
+            <div id="slider_container_3">
 
                 <div id="SliderName_3" class="SliderName_3" >
                     
@@ -109,8 +109,13 @@
                     demo3Effect6 = {name: 'myEffect36', rows: 2, cols: 4, delay: 100, duration: 400, order: 'random', fade: true, chess: true};
 
                     effectsDemo3 = [demo3Effect6];
+                    curr_window = $(window).width();
+                    window.onresize = function(event) {
+                        curr_window = $(window).width();
+                        var demoSlider_3 = Sliderman.slider({container: 'SliderName_3', width: curr_window, height: curr_window * 0.666, effects: effectsDemo3, display: {autoplay: 3000}});
 
-                    var demoSlider_3 = Sliderman.slider({container: 'SliderName_3', width: 900, height: 600, effects: effectsDemo3, display: {autoplay: 3000}});
+                    };
+                    var demoSlider_3 = Sliderman.slider({container: 'SliderName_3', width: curr_window, height: curr_window * 0.666, effects: effectsDemo3, display: {autoplay: 3000}});
                 </script>
 
                 <div class="c"></div>
